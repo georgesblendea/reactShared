@@ -1,7 +1,7 @@
 
 const Pricing = () => {
     return(
-        <div class="pricingPage">Pricing Page</div>
+        <div className="pricingPage">Pricing Page</div>
     );
 }
 

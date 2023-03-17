@@ -1,7 +1,9 @@
-
-const StickyMenu = () => {
+import Menu from "./menu/Menu";
+const StickyMenu = ({menuItems}) => {
     return(
-        <div class="stickyMenu">StickyMenu</div>
+        <div className="stickyMenu">
+            <Menu menuItems={menuItems}></Menu>
+        </div>
     );
 }
 

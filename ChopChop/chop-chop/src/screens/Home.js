@@ -1,7 +1,11 @@
 
+import GridItem from "../components/MediaCard";
+
 const Home = () => {
     return(
-        <div class="homePage">Home Page</div>
+        <div className="homePage">
+           Home Page
+        </div>
     );
 }
 

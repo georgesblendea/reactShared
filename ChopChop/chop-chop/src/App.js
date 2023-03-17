@@ -1,24 +1,27 @@
 import './App.css';
 import Root from './routing/Root';
-import Home from './screens/Home';
 import RoutingError from './routing/RoutingError';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Children } from 'react';
+import {RouterHandler, menuItems} from './components/RouterHandler';
+
+
+
+
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root/>,
-    loader: async () => {},
-    errorElement: <RoutingError/>,
+    element: <Root menuItems={menuItems}/>,
     children: [
       {
-        path: '/home',
-        element: <Home></Home>
+        path: ':page',
+        element: <RouterHandler/>,
       }
     ]
   }
 ]);
+
+
 
 
 function App() {

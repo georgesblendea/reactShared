@@ -1,0 +1,8 @@
+.menu {
+    width: 500px;
+    height: 70px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+
+}

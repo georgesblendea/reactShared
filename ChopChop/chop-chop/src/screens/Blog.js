@@ -1,8 +1,15 @@
-
+import MediaCard from "../components/MediaCard";
+import '../styles/screens/Blog.css';
+import MediaGrid from "../components/MediaGrid";
 
 const Blog = () => {
     return(
-        <div class="blogPage">Blog Page</div>
+        <>
+            <div className="blogPage">
+               {/* <MediaCard/> */}
+               <MediaGrid></MediaGrid>
+            </div>
+        </>
     );
 }
 
